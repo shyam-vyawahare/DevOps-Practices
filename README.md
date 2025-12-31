@@ -32,3 +32,22 @@ and automation techniques used in real-world software development and deployment
 
 ## 📂 Repository Structure
 
+College-DevOps-Practicals/
+│
+├── practical-1-git-basics/
+│ └── git_commands.md
+│
+├── practical-2-linux-basics/
+│ └── linux_commands.md
+│
+├── practical-3-docker-basics/
+│ ├── Dockerfile
+│ └── README.md
+│
+├── practical-4-ci-cd/
+│ └── github-actions.yml
+│
+├── practical-5-bash-scripting/
+│ └── backup_script.sh
+│
+└── README.md
