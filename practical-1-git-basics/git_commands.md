@@ -1,24 +1,12 @@
+# Git Basics
 
----
+## Common Git Commands
 
-## 🧪 Practicals Covered
+- git init – Initialize repository
+- git status – Check repo status
+- git add . – Stage changes
+- git commit -m "message" – Commit changes
+- git branch – List branches
+- git merge – Merge branches
 
-1. Git & GitHub Basics
-2. Linux Command Line Essentials
-3. Docker Fundamentals
-4. CI/CD using GitHub Actions
-5. Bash Scripting for Automation
-
----
-
-## ⚠️ Note
-
-This repository is **self-initiated** and created for learning purposes.
-The practicals may evolve as new tools and concepts are explored.
-
----
-
-## 👨‍💻 Author
-
-**Ultrex**  
-Engineering Student | DevOps Learner | Exploring Automation & Cloud
+Git helps in version control and team collaboration.
