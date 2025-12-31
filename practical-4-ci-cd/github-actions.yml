@@ -1,0 +1,15 @@
+name: Simple CI Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run basic command
+        run: echo "CI pipeline running successfully"
