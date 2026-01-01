@@ -1,0 +1,12 @@
+name: My First Workflow
+on: [push] # The event: trigger this on every push
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest # The environment: use a Linux VM
+    steps:
+      - name: Say Hello
+        run: echo "Hello! I am running this for your Non-AI series."
+      
+      - name: Check the date
+        run: date
