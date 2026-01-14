@@ -1,0 +1,20 @@
+name: Branch Based CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Print branch name
+        run: echo "Running pipeline for $GITHUB_REF"
+
+      - name: Simulate build
+        run: echo "Build completed successfully"
