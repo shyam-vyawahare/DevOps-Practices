@@ -56,6 +56,11 @@ practical-6-linux-python-app/
 ├── requirements.txt
 └── run_app.sh
 |
+practical-7-dockerize-python/
+├── Dockerfile
+├── app.py
+└── README.md
+|
 └── README.md
 
 
