@@ -74,6 +74,6 @@ The practicals may evolve as new tools and concepts are explored.
 
 ## 👨‍💻 Author
 
-**Ultrex**  
+**Shyam Vyawahare**  
 Engineering Student | DevOps Learner | Exploring Automation & Cloud
 
