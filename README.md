@@ -50,6 +50,12 @@ College-DevOps-Practicals/
 ├── practical-5-bash-scripting/
 │ └── backup_script.sh
 │
+practical-6-linux-python-app/
+├── README.md
+├── app.py
+├── requirements.txt
+└── run_app.sh
+|
 └── README.md
 
 
