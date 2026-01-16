@@ -61,6 +61,12 @@ practical-7-dockerize-python/
 ├── app.py
 └── README.md
 |
+practical-8-docker-compose/
+├── docker-compose.yml
+├── app/
+│   └── app.py
+└── README.md
+|
 └── README.md
 
 
