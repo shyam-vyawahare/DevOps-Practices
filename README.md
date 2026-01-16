@@ -1,4 +1,4 @@
-# 🚀 College DevOps Practicals
+# 🚀 DevOps Practicals
 
 This repository contains **self-designed DevOps practicals** created to understand and practice
 core DevOps concepts beyond college syllabus requirements.
