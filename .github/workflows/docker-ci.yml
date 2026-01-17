@@ -1,0 +1,14 @@
+2. Push code to the repository
+3. Open the **Actions** tab on GitHub
+4. Observe the automated Docker build
+
+---
+
+## 📌 Outcome
+
+After this practical, you understand how:
+- CI pipelines work
+- Builds are automated
+- DevOps reduces manual effort and errors
+
+This pipeline will later be extended for **deployment to cloud servers**.
