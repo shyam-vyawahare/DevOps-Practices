@@ -67,6 +67,13 @@ practical-8-docker-compose/
 │   └── app.py
 └── README.md
 |
+practical-9-github-actions/
+└── docker-ci.yml
+|
+practical-10-aws-ec2/
+├── ec2_commands.md
+└── README.md
+|
 └── README.md
 
 
