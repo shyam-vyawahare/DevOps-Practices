@@ -34,49 +34,42 @@ and automation techniques used in real-world software development and deployment
 
 ## 📂 Repository Structure
 ```
-College-DevOps-Practicals/
+DevOps-Practices/
 │
-├── practical-1-git-basics/
-│ └── git_commands.md
+├── .github/
+│   └── workflows/
 │
-├── practical-2-linux-basics/
-│ └── linux_commands.md
+├── Practicals/
+│   ├── practical-1-git-basics/
+│   ├── practical-2-linux-basics/
+│   ├── practical-3-docker-basics/
+│   ├── practical-4-ci-cd/
+│   ├── practical-5-bash-scripting/
+│   ├── practical-6-Running a Python App on Linux/
+│   ├── practical-7-dockerize-python/
+│   ├── practical-8-docker-compose/
+│   ├── practical-9-github-actions/
+│   └── practical-10-aws-ec2/
 │
-├── practical-3-docker-basics/
-│ ├── Dockerfile
-│ └── README.md
+├── practice/
+│   ├── ci-cd-notes.md
+│   ├── docker-compose-basic.yml
+│   └── linux-process-monitor.md
 │
-├── practical-4-ci-cd/
-│ └── github-actions.yml
+├── practice-advanced/
+│   ├── dockerfile-python-app/
+│   ├── bash-log-cleaner.sh
+│   ├── ci-cd-branch-based.yml
+│   ├── ci-cd-sample-pipeline.yml
+│   ├── devops-glossary.md
+│   ├── docker-healthcheck-example.yml
+│   ├── env-variables-demo.sh
+│   ├── git-workflow-notes.md
+│   ├── linux-disk-monitor.sh
+│   ├── nginx-basic-config.conf
+│   └── system-resource-monitor.sh
 │
-├── practical-5-bash-scripting/
-│ └── backup_script.sh
-│
-practical-6-linux-python-app/
-├── README.md
-├── app.py
-├── requirements.txt
-└── run_app.sh
-|
-practical-7-dockerize-python/
-├── Dockerfile
-├── app.py
-└── README.md
-|
-practical-8-docker-compose/
-├── docker-compose.yml
-├── app/
-│   └── app.py
-└── README.md
-|
-practical-9-github-actions/
-└── docker-ci.yml
-|
-practical-10-aws-ec2/
-├── ec2_commands.md
-└── README.md
-|
-└── README.md
+└── README.md                               (This File)
 ```
 
 ---
