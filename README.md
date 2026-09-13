@@ -6,6 +6,8 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
+## Last updated on 13th of September 2026
+
 ---
 
 ## 🎯 Objectives
@@ -31,7 +33,7 @@ and automation techniques used in real-world software development and deployment
 ---
 
 ## 📂 Repository Structure
-
+```
 College-DevOps-Practicals/
 │
 ├── practical-1-git-basics/
@@ -75,7 +77,7 @@ practical-10-aws-ec2/
 └── README.md
 |
 └── README.md
-
+```
 
 ---
 
