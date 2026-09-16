@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 15th of September 2026
+## Last updated on 16th of September 2026
 
 ---
 
@@ -65,6 +65,7 @@ DevOps-Practices/
 │   ├── ci-cd-sample-pipeline.yml
 │   ├── devops-glossary.md
 │   ├── docker-healthcheck-example.yml
+│   ├── docker-environment-variables.md
 │   ├── env-variables-demo.sh
 │   ├── git-workflow-notes.md
 │   ├── linux-disk-monitor.sh
