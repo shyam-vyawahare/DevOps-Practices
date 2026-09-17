@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 16th of September 2026
+## Last updated on 17th of September 2026
 
 ---
 
@@ -56,6 +56,7 @@ DevOps-Practices/
 │   ├── docker-compose-basic.yml
 │   ├── docker-networking.md
 │   ├── docker-volumes.md
+│   ├── docker-multi-container.md
 │   └── linux-process-monitor.md
 │
 ├── practice-advanced/
