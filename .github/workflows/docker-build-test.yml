@@ -1,0 +1,50 @@
+name: Docker Build and Test
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  docker-build:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker Image
+        run: |
+          docker build \
+            -t devops-practice-app:latest \
+            ./practice/docker-multi-container
+
+      - name: Verify Docker Image
+        run: |
+          docker images
+          docker image inspect devops-practice-app:latest
+
+      - name: Run Container
+        run: |
+          docker run -d \
+            --name devops-test-container \
+            devops-practice-app:latest
+
+      - name: Check Container Status
+        run: |
+          sleep 5
+          docker ps
+          docker inspect devops-test-container
+
+      - name: Cleanup
+        if: always()
+        run: |
+          docker rm -f devops-test-container || true
