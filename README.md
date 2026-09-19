@@ -38,6 +38,8 @@ DevOps-Practices/
 │
 ├── .github/
 │   └── workflows/
+│       ├── docker-ci.yml
+│       ├── hello-world.yml
 │       └── docker-build-test.yml
 │
 ├── Practicals/
