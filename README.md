@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 20th of September 2026
+## Last updated on 21st of September 2026
 
 ---
 
@@ -40,6 +40,7 @@ DevOps-Practices/
 │   └── workflows/
 │       ├── docker-ci.yml
 │       ├── docker-publish.yml
+│       ├── docker-deploy-simulation.yml
 │       ├── hello-world.yml
 │       └── docker-build-test.yml
 │
