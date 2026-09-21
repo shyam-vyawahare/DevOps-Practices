@@ -1,0 +1,66 @@
+name: Docker Deployment Simulation
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+env:
+  IMAGE_NAME: devops-practice-app
+
+jobs:
+  deploy:
+    name: Deploy Docker Image
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: read
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Pull Published Image
+        run: |
+          docker pull \
+            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
+
+      - name: Stop Existing Container
+        run: |
+          docker rm -f devops-production 2>/dev/null || true
+
+      - name: Deploy Container
+        run: |
+          docker run -d \
+            --name devops-production \
+            -p 8080:5000 \
+            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
+
+      - name: Verify Deployment
+        run: |
+          sleep 5
+          docker ps
+
+      - name: Test Container
+        run: |
+          curl --fail http://localhost:8080/ || exit 1
+
+      - name: Show Container Logs
+        if: always()
+        run: |
+          docker logs devops-production
+
+      - name: Cleanup
+        if: always()
+        run: |
+          docker rm -f devops-production 2>/dev/null || true
