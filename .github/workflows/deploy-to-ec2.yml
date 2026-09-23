@@ -1,0 +1,99 @@
+name: Deploy Docker App to EC2
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+env:
+  IMAGE_NAME: devops-practice-app
+  CONTAINER_NAME: devops-production
+  HOST_PORT: 8080
+  CONTAINER_PORT: 5000
+
+jobs:
+  deploy:
+    name: Build and Deploy to AWS EC2
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      # 1. Checkout Repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Docker Buildx
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 3. Login to GitHub Container Registry
+      - name: Login to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # 4. Build and Push Docker Image
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./practice/docker-multi-container
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
+            ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+      # 5. Deploy to AWS EC2
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            echo "Starting deployment..."
+
+            echo "Logging in to GHCR..."
+            echo "${{ secrets.GHCR_TOKEN }}" | docker login ghcr.io \
+              -u "${{ secrets.GHCR_USERNAME }}" \
+              --password-stdin
+
+            echo "Pulling latest Docker image..."
+            docker pull \
+              ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
+
+            echo "Stopping old container..."
+            docker rm -f ${{ env.CONTAINER_NAME }} 2>/dev/null || true
+
+            echo "Starting new container..."
+            docker run -d \
+              --name ${{ env.CONTAINER_NAME }} \
+              -p ${{ env.HOST_PORT }}:${{ env.CONTAINER_PORT }} \
+              ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest
+
+            echo "Checking running containers..."
+            docker ps
+
+            echo "Deployment completed successfully!"
+
+      # 6. Deployment Summary
+      - name: Deployment Summary
+        run: |
+          echo "======================================"
+          echo "Docker Deployment Completed"
+          echo "======================================"
+          echo "Image:"
+          echo "ghcr.io/${{ github.repository_owner }}/${{ env.IMAGE_NAME }}:latest"
+          echo ""
+          echo "Container:"
+          echo "${{ env.CONTAINER_NAME }}"
+          echo ""
+          echo "EC2 Port:"
+          echo "${{ env.HOST_PORT }}"
+          echo "======================================"
