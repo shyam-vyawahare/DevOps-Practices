@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 24th of September 2026
+## Last updated on 25th of September 2026
 
 ---
 
@@ -58,6 +58,7 @@ DevOps-Practices/
 │   └── practical-10-aws-ec2/
 │
 ├── practice/
+│   ├── automated-rollback.md
 │   ├── aws-ec2-docker-deployment.md
 │   ├── ci-cd-notes.md
 │   ├── docker-compose-basic.yml
