@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 26th of September 2026
+## Last updated on 27th of September 2026
 
 ---
 
@@ -68,7 +68,8 @@ DevOps-Practices/
 │   ├── docker-multi-container.md
 │   ├── docker-healthchecks.md
 │   ├── deployment-health-check.md
-│   └── linux-process-monitor.md
+│   ├── linux-process-monitor.md
+│   └── python-stack.py
 │
 ├── practice-advanced/
 │   ├── dockerfile-python-app/
