@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 7th of October 2026
+## Last updated on 8th of October 2026
 
 ---
 
@@ -71,6 +71,7 @@ DevOps-Practices/
 │   ├── linux-process-monitor.md
 │   ├── python-binary-tree.py
 │   ├── python-file-handling.py
+│   ├── python-graph.py
 │   ├── python-heap.py
 │   ├── python-linked-list.py
 │   ├── python-sorting.py
