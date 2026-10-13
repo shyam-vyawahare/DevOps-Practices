@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 12th of October 2026
+## Last updated on 13th of October 2026
 
 ---
 
@@ -76,6 +76,7 @@ DevOps-Practices/
 │   ├── python-greedy-algorithms.py
 │   ├── python-heap.py
 │   ├── python-linked-list.py
+│   ├── python-prefix-sum.py
 │   ├── python-sliding-window.py
 │   ├── python-sorting.py
 │   ├── python-stack.py
