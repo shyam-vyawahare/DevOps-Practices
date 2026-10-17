@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 16th of October 2026
+## Last updated on 17th of October 2026
 
 ---
 
@@ -84,6 +84,7 @@ DevOps-Practices/
 │   ├── python-sorting.py
 │   ├── python-stack.py
 │   ├── python-string-manipulation.py
+│   ├── python-trie.py
 │   ├── python-two-pointers.py
 │   └── python-recursion.py
 │
