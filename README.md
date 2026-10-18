@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 17th of October 2026
+## Last updated on 18th of October 2026
 
 ---
 
@@ -72,6 +72,7 @@ DevOps-Practices/
 │   ├── python-binary-tree.py
 │   ├── python-binary-search-patterns.py
 │   ├── python-bit-manipulation.py
+│   ├── python-dijkstra.py
 │   ├── python-dynamic-programming.py
 │   ├── python-file-handling.py
 │   ├── python-graph.py
