@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 21st of October 2026
+## Last updated on 22nd of October 2026
 
 ---
 
@@ -81,6 +81,7 @@ DevOps-Practices/
 │   ├── python-kadane-algorithm.py
 │   ├── python-linked-list.py
 │   ├── python-matrix-operations.py
+│   ├── python-monotonic-stack.py
 │   ├── python-prefix-sum.py
 │   ├── python-sliding-window.py
 │   ├── python-sorting.py
