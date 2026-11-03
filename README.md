@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 2nd of November 2026
+## Last updated on 3rd of November 2026
 
 ---
 
@@ -105,6 +105,7 @@ DevOps-Practices/
 │   ├── env-variables-demo.sh
 │   ├── git-workflow-notes.md
 │   ├── python-backup-manager.py
+│   ├── python-disk-usage-analyzer.py
 │   ├── python-rate-limiter.py
 │   ├── python-lru-cache.py
 │   ├── python-config-manager.py
