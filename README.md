@@ -6,7 +6,7 @@ core DevOps concepts beyond college syllabus requirements.
 The goal of this repository is to gain **hands-on experience** with DevOps tools, workflows,
 and automation techniques used in real-world software development and deployment.
 
-## Last updated on 3rd of November 2026
+## Last updated on 9th of November 2026
 
 ---
 
@@ -115,6 +115,7 @@ DevOps-Practices/
 │   ├── python-deployment-validator.py
 │   ├── python-searching.py
 │   ├── python-service-monitor.py
+│   ├── python-process-manager.py
 │   ├── python-hashing.py
 │   ├── python-union-find.py
 │   ├── python-retry-backoff.py
