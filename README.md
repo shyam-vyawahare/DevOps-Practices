@@ -36,7 +36,7 @@ Last Updated: 13th November 2026
 ---
 
 📂 Repository Structure
-
+```
 DevOps-Practices/
 │
 ├── .github/
@@ -127,7 +127,7 @@ DevOps-Practices/
 │   └── dockerfile-python-app/
 │
 └── README.md
-
+```
 ---
 
 🧪 Practicals Covered
