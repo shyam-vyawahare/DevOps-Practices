@@ -107,6 +107,7 @@ DevOps-Practices/
 │   ├── git-workflow-notes.md
 │   ├── linux-disk-monitor.sh
 │   ├── nginx-basic-config.conf
+│   ├── python-alert-manager.py
 │   ├── python-backup-manager.py
 │   ├── python-config-manager.py
 │   ├── python-deployment-validator.py
