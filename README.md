@@ -4,7 +4,7 @@ A hands-on repository documenting my journey of learning, practicing, and streng
 
 This repository contains self-designed practicals and coding exercises that go beyond college syllabus requirements, focusing on real-world development, deployment, infrastructure management, and operational automation.
 
-Last Updated: 13th November 2026
+Last Updated: 14th November 2026
 
 ---
 
@@ -108,6 +108,7 @@ DevOps-Practices/
 │   ├── linux-disk-monitor.sh
 │   ├── nginx-basic-config.conf
 │   ├── python-alert-manager.py
+│   ├── python-api-health-monitor.py
 │   ├── python-backup-manager.py
 │   ├── python-config-manager.py
 │   ├── python-deployment-validator.py
