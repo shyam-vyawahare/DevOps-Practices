@@ -4,7 +4,7 @@ A hands-on repository documenting my journey of learning, practicing, and streng
 
 This repository contains self-designed practicals and coding exercises that go beyond college syllabus requirements, focusing on real-world development, deployment, infrastructure management, and operational automation.
 
-Last Updated: 17th November 2026
+Last Updated: 18th November 2026
 
 ---
 
@@ -116,6 +116,7 @@ DevOps-Practices/
 │   ├── python-docker-healthcheck.py
 │   ├── python-hashing.py
 │   ├── python-log-analyzer.py
+│   ├── python-log-rotation.py
 │   ├── python-lru-cache.py
 │   ├── python-network-monitor.py
 │   ├── python-process-manager.py
