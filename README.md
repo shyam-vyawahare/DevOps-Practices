@@ -4,7 +4,7 @@ A hands-on repository documenting my journey of learning, practicing, and streng
 
 This repository contains self-designed practicals and coding exercises that go beyond college syllabus requirements, focusing on real-world development, deployment, infrastructure management, and operational automation.
 
-Last Updated: 20th November 2026
+Last Updated: 21st November 2026
 
 ---
 
@@ -126,6 +126,7 @@ DevOps-Practices/
 │   ├── python-rate-limiter.py
 │   ├── python-retry-backoff.py
 │   ├── python-searching.py
+│   ├── python-ssl-certificate-checker.py
 │   ├── python-service-monitor.py
 │   ├── python-union-find.py
 │   ├── python-webhook-monitor.py
