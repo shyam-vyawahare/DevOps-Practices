@@ -4,7 +4,7 @@ A hands-on repository documenting my journey of learning, practicing, and streng
 
 This repository contains self-designed practicals and coding exercises that go beyond college syllabus requirements, focusing on real-world development, deployment, infrastructure management, and operational automation.
 
-Last Updated: 22nd November 2026
+Last Updated: 23rd November 2026
 
 ---
 
@@ -130,6 +130,7 @@ DevOps-Practices/
 │   ├── python-ssl-certificate-checker.py
 │   ├── python-service-monitor.py
 │   ├── python-union-find.py
+│   ├── python-uptime-monitor.py
 │   ├── python-webhook-monitor.py
 │   ├── system-resource-monitor.sh
 │   └── dockerfile-python-app/
